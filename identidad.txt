@@ -1,0 +1,150 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.brand-section {
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.brand-section h2 {
+    text-align: center;
+}
+
+/* Estilos para la galería de imágenes */
+.image-gallery {
+    overflow-x: auto;
+    white-space: nowrap;
+    /* Evita el salto de línea entre imágenes */
+    text-align: center; /* Centra las imágenes */
+}
+
+.gallery-item {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+    /* Cambiar el cursor al pasar sobre la imagen */
+    transition: transform 0.3s;
+    /* Transición suave */
+}
+
+.gallery-item:hover {
+    transform: scale(1.2);
+    /* Aumenta el tamaño al pasar el ratón */
+}
+
+.gallery-item.ampliada {
+    transform: scale(1.5);
+    /* Cambiar el tamaño de la imagen ampliada */
+    z-index: 999;
+    /* Asegurar que la imagen ampliada esté por encima de las demás */
+}
+
+/* Estilos para el formulario de contacto */
+#contacto {
+    border: 2px solid #ccc;
+    /* Cambio del color del borde */
+    padding: 20px;
+    text-align: center;
+}
+
+#contacto h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#contacto p {
+    margin-bottom: 20px;
+}
+
+#contacto form {
+    max-width: 500px;
+    margin: 0 auto; /* Centra el formulario */
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; /* Alinear etiquetas a la izquierda */
+}
+
+#contacto form input,
+#contacto form textarea {
+    width: calc(100% - 16px);
+    /* Ancho del 100% menos el padding */
+    padding: 8px;
+    margin-bottom: 10px;
+    /* Añade margen inferior para separar los campos */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Asegura que el padding y el border no afecten el ancho total */
+}
+
+.input-group textarea {
+    resize: vertical;
+}
+
+.button-group {
+    text-align: center;
+}
+
+.button-group button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.9s ease;
+}
+
+.button-group button:hover {
+    background-color: #0056b3;
+}
+#boton-proyectos-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999; /* Asegura que el botón esté por encima de otros elementos */
+}
+
+#boton-proyectos {
+    background-color: #bac9da; /* Color de fondo del botón */
+    color: rgb(0, 0, 0); /* Color del texto del botón */
+    padding: 10px 20px; /* Relleno del botón */
+    border: none; /* Quita el borde del botón */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+  }
+  
+  #boton-proyectos:hover {
+    background-color: #2fe900; /* Color de fondo del botón al pasar el ratón */
+  }
+  

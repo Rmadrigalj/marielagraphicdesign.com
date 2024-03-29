@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Papelería - Diseñadora Gráfica</title>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=SF+Pro">
+  <link rel="stylesheet" href="static/estiloscss/papeleriastyle.css">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <h1>Papelería</h1>
+    <h2>Diseñadora Gráfica</h2>
+  </header>
+  <nav>
+    <!-- Aquí puedes agregar enlaces de navegación si es necesario -->
+  </nav>
+  <main>
+    <div class="frame">
+      <!-- Frame para la bienvenida -->
+      <div class="frame-section" id="bienvenida">
+        <section id="inicio">
+          <h2 style="text-align: center;">¡Bienvenido!</h2>
+          <p style="text-align: center;">¡Hola! Soy una diseñadora gráfica apasionada por crear diseños únicos y
+            creativos para tu negocio.</p>
+        </section>
+      </div>
+      <!-- Frame para el portafolio -->
+      <div class="frame-section">
+        <section id="portafolio">
+          <h2 style="text-align: center;">Portafolio</h2>
+          <div id="galeria" class="scroll-menu">
+            <!-- Aquí se cargarán dinámicamente las imágenes -->
+            <div class="contenedor-imagenes">
+              <!-- Aquí se agregarán las imágenes -->
+            </div>
+          </div>
+
+        </section>
+      </div>
+      <!-- Frame para la sección de contacto -->
+      <div class="frame-section" id="contacto">
+        <section>
+          <h2>Contacto</h2>
+          <p>¿Listo para comenzar un proyecto juntos? ¡Contáctame!</p>
+          <form action="enviar.php" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" required></textarea><br>
+            <button type="submit">Enviar</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&copy; 2024 - Diseñadora Gráfica</p>
+  </footer>
+  <script src="static/js/scriptpapeleria.js"></script>
+</body>
+
+</html>
